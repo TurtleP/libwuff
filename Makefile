@@ -23,7 +23,7 @@ clean:
 	@echo clean ...
 	@rm -fr $(OBJFILES) $(TARGET)
 
-$(TARGET): $(OBJFILES)
+$(TARGET).a: $(OBJFILES)
 	$(CC) $(CFLAGS) -o $(TARGET) $(OBJFILES) $(LDFLAGS)
 
 
